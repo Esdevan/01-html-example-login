@@ -1,0 +1,163 @@
+:root {
+  font-family: "Inter", sans-serif;
+  --primary: #2c64f6;
+  --secondary: #efefef;
+  --secondary-text: #6b6d74;
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 65% auto;
+  border-bottom: 2px solid #e4e1e1;
+}
+
+.hero,
+.form {
+  padding: 50px 30px 10px 30px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 20% auto;
+  border-right: 2px solid var(--secondary);
+}
+
+.container-logo-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.title {
+  font-size: 3.725rem;
+}
+.title .text-primary {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+input.form-control {
+  padding: 20px;
+  border-color: var(--secondary);
+  border-radius: 10px;
+  border-width: 1px;
+}
+
+.btn,
+.form-control {
+  border-style: solid;
+}
+
+.btn {
+  padding: 15px 10px 15px 10px;
+  border-radius: 16px;
+  border-width: 0;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.btn-primary {
+  color: #ffff;
+  background: var(--primary);
+}
+
+.btn-transparent {
+  background: transparent;
+}
+.btn-transparent:hover,
+.btn-outline-primary:hover {
+  background: var(--secondary);
+}
+
+.btn-outline-primary {
+  color: var(--primary);
+  background: transparent;
+  border-width: 1px;
+  border-color: 1px solid var(--primary);
+}
+
+.footer {
+  color: #6b6d74;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.list-horizontal {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+}
+/* 
+
+button,
+      input {
+        border-width: 1px;
+        border-style: solid;
+      }
+input {
+        padding: 20px;
+
+        border-color: #ebedf0;
+        border-radius: 10px;
+      }
+
+      button {
+        padding: 15px 10px 15px 10px;
+        border-radius: 16px;
+        border-width: 0;
+        background-color: #0064e0;
+        color: #fff;
+        transition: all;
+        cursor: pointer;
+      }
+      button:hover {
+        opacity: 0.8;
+      }
+      button.btn-transparent {
+        background-color: transparent;
+        color: #000;
+      }
+      button.btn-transparent:hover {
+        background-color: #ebedf0;
+      }
+      button.btn-outline {
+        border-width: 1px;
+        border-style: solid;
+        border-color: #0064e0;
+        color: #0064e0;
+      } */
